@@ -51,6 +51,9 @@ resource "aws_security_group" "default" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  tags {
+    Name = "lab-monitor"
+  }
 }
 
 resource "aws_instance" "web" {
