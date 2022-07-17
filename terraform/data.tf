@@ -23,3 +23,7 @@ data "aws_key_pair" "example" {
   include_public_key = true
 
 }
+
+data "template_file" "init" {
+  template = file("${path.module}/script/init-setup.sh")
+}
