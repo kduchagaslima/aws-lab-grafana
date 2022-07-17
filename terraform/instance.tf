@@ -28,6 +28,7 @@ resource "aws_security_group" "default" {
 
   # Acesso Grafana de qualquer um
   ingress {
+    description = "Grafana access"
     from_port = 3000
     to_port = 3000
     protocol = "tcp"
@@ -36,6 +37,7 @@ resource "aws_security_group" "default" {
 
   # Acesso Prometheus de qualquer um
   ingress {
+    description = "Prometheus access"
     from_port = 9090
     to_port = 9090
     protocol = "tcp"
