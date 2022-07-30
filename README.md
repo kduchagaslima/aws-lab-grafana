@@ -44,3 +44,5 @@ Após finalizado, basta aguardar uns segundos para acessar as aplicações Grafa
 http://ec2-instance-public-dns:3000 - Grafana
 
 http://ec2-instance-public-dns:9090 - Prometheus
+
+#
